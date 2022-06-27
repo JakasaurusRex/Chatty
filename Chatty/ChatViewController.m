@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *chatField;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *chats;
+@property (strong, nonatomic) NSTimer *timer;
 @end
 
 @implementation ChatViewController
@@ -23,7 +24,8 @@
     self.tableView.dataSource = self;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     // Do any additional setup after loading the view.
-    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTimer) userInfo:nil repeats:true];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTimer) userInfo:nil repeats:true];
+    [self.timer fire];
 }
 
 - (IBAction)sendButton:(id)sender {
@@ -77,6 +79,9 @@
         }
     }];
 }
+- (IBAction)logoutButton:(id)sender {
+    [self logout];
+}
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 20;
@@ -85,6 +90,20 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+}
+
+-(void) logout{
+    [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
+        if(error != nil) {
+            NSLog(@"rip cant logout: %@", error);
+        } else {
+            NSLog(@"User logged out successfully");
+            // display view controller that needs to shown after successful login
+            [self performSegueWithIdentifier:@"logoutSegue" sender:nil];
+            [self.timer invalidate];
+            self.timer = nil;
+        }
+    }];
 }
 
 

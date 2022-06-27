@@ -136,10 +136,23 @@
                         <viewLayoutGuide key="safeArea" id="9G1-RC-0QC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Chatty" id="WbA-Yh-V7t"/>
+                    <navigationItem key="navigationItem" title="Chatty" id="WbA-Yh-V7t">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="HzI-oo-G1v">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="jSZ-Tv-qQw">
+                                <rect key="frame" x="16" y="5" width="86" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutButton:" destination="ghM-FA-ePE" eventType="touchUpInside" id="UXU-dD-hei"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="chatField" destination="G5T-HG-P1b" id="DnU-m8-eFg"/>
                         <outlet property="tableView" destination="qr9-Hr-tWG" id="PVq-7b-JW9"/>
+                        <segue destination="BLS-Oh-q6L" kind="presentation" identifier="logoutSegue" modalPresentationStyle="fullScreen" id="tcq-dx-ygE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAU-fd-SZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
