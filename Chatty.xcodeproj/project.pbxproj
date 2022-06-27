@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84CF92D9286A146E00EBD615 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF92D8286A146E00EBD615 /* AppDelegate.m */; };
+		84CF92DC286A146E00EBD615 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF92DB286A146E00EBD615 /* SceneDelegate.m */; };
+		84CF92DF286A146E00EBD615 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF92DE286A146E00EBD615 /* ViewController.m */; };
+		84CF92E2286A146E00EBD615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CF92E0286A146E00EBD615 /* Main.storyboard */; };
+		84CF92E4286A146F00EBD615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CF92E3286A146F00EBD615 /* Assets.xcassets */; };
+		84CF92E7286A146F00EBD615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CF92E5286A146F00EBD615 /* LaunchScreen.storyboard */; };
+		84CF92EA286A146F00EBD615 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF92E9286A146F00EBD615 /* main.m */; };
+		84CF92F4286A146F00EBD615 /* ChattyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF92F3286A146F00EBD615 /* ChattyTests.m */; };
+		84CF92FE286A146F00EBD615 /* ChattyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF92FD286A146F00EBD615 /* ChattyUITests.m */; };
+		84CF9300286A146F00EBD615 /* ChattyUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CF92FF286A146F00EBD615 /* ChattyUITestsLaunchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84CF92F0286A146F00EBD615 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CF92CC286A146E00EBD615 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CF92D3286A146E00EBD615;
+			remoteInfo = Chatty;
+		};
+		84CF92FA286A146F00EBD615 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84CF92CC286A146E00EBD615 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CF92D3286A146E00EBD615;
+			remoteInfo = Chatty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84CF92D4286A146E00EBD615 /* Chatty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CF92D7286A146E00EBD615 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84CF92D8286A146E00EBD615 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84CF92DA286A146E00EBD615 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		84CF92DB286A146E00EBD615 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		84CF92DD286A146E00EBD615 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84CF92DE286A146E00EBD615 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84CF92E1286A146E00EBD615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84CF92E3286A146F00EBD615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84CF92E6286A146F00EBD615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84CF92E8286A146F00EBD615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CF92E9286A146F00EBD615 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84CF92EF286A146F00EBD615 /* ChattyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChattyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CF92F3286A146F00EBD615 /* ChattyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChattyTests.m; sourceTree = "<group>"; };
+		84CF92F9286A146F00EBD615 /* ChattyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChattyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CF92FD286A146F00EBD615 /* ChattyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChattyUITests.m; sourceTree = "<group>"; };
+		84CF92FF286A146F00EBD615 /* ChattyUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChattyUITestsLaunchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84CF92D1286A146E00EBD615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CF92EC286A146F00EBD615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CF92F6286A146F00EBD615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84CF92CB286A146E00EBD615 = {
+			isa = PBXGroup;
+			children = (
+				84CF92D6286A146E00EBD615 /* Chatty */,
+				84CF92F2286A146F00EBD615 /* ChattyTests */,
+				84CF92FC286A146F00EBD615 /* ChattyUITests */,
+				84CF92D5286A146E00EBD615 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84CF92D5286A146E00EBD615 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84CF92D4286A146E00EBD615 /* Chatty.app */,
+				84CF92EF286A146F00EBD615 /* ChattyTests.xctest */,
+				84CF92F9286A146F00EBD615 /* ChattyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84CF92D6286A146E00EBD615 /* Chatty */ = {
+			isa = PBXGroup;
+			children = (
+				84CF92D7286A146E00EBD615 /* AppDelegate.h */,
+				84CF92D8286A146E00EBD615 /* AppDelegate.m */,
+				84CF92DA286A146E00EBD615 /* SceneDelegate.h */,
+				84CF92DB286A146E00EBD615 /* SceneDelegate.m */,
+				84CF92DD286A146E00EBD615 /* ViewController.h */,
+				84CF92DE286A146E00EBD615 /* ViewController.m */,
+				84CF92E0286A146E00EBD615 /* Main.storyboard */,
+				84CF92E3286A146F00EBD615 /* Assets.xcassets */,
+				84CF92E5286A146F00EBD615 /* LaunchScreen.storyboard */,
+				84CF92E8286A146F00EBD615 /* Info.plist */,
+				84CF92E9286A146F00EBD615 /* main.m */,
+			);
+			path = Chatty;
+			sourceTree = "<group>";
+		};
+		84CF92F2286A146F00EBD615 /* ChattyTests */ = {
+			isa = PBXGroup;
+			children = (
+				84CF92F3286A146F00EBD615 /* ChattyTests.m */,
+			);
+			path = ChattyTests;
+			sourceTree = "<group>";
+		};
+		84CF92FC286A146F00EBD615 /* ChattyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84CF92FD286A146F00EBD615 /* ChattyUITests.m */,
+				84CF92FF286A146F00EBD615 /* ChattyUITestsLaunchTests.m */,
+			);
+			path = ChattyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84CF92D3286A146E00EBD615 /* Chatty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CF9303286A146F00EBD615 /* Build configuration list for PBXNativeTarget "Chatty" */;
+			buildPhases = (
+				84CF92D0286A146E00EBD615 /* Sources */,
+				84CF92D1286A146E00EBD615 /* Frameworks */,
+				84CF92D2286A146E00EBD615 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chatty;
+			productName = Chatty;
+			productReference = 84CF92D4286A146E00EBD615 /* Chatty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84CF92EE286A146F00EBD615 /* ChattyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CF9306286A146F00EBD615 /* Build configuration list for PBXNativeTarget "ChattyTests" */;
+			buildPhases = (
+				84CF92EB286A146F00EBD615 /* Sources */,
+				84CF92EC286A146F00EBD615 /* Frameworks */,
+				84CF92ED286A146F00EBD615 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CF92F1286A146F00EBD615 /* PBXTargetDependency */,
+			);
+			name = ChattyTests;
+			productName = ChattyTests;
+			productReference = 84CF92EF286A146F00EBD615 /* ChattyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84CF92F8286A146F00EBD615 /* ChattyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84CF9309286A146F00EBD615 /* Build configuration list for PBXNativeTarget "ChattyUITests" */;
+			buildPhases = (
+				84CF92F5286A146F00EBD615 /* Sources */,
+				84CF92F6286A146F00EBD615 /* Frameworks */,
+				84CF92F7286A146F00EBD615 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84CF92FB286A146F00EBD615 /* PBXTargetDependency */,
+			);
+			name = ChattyUITests;
+			productName = ChattyUITests;
+			productReference = 84CF92F9286A146F00EBD615 /* ChattyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84CF92CC286A146E00EBD615 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					84CF92D3286A146E00EBD615 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					84CF92EE286A146F00EBD615 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 84CF92D3286A146E00EBD615;
+					};
+					84CF92F8286A146F00EBD615 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 84CF92D3286A146E00EBD615;
+					};
+				};
+			};
+			buildConfigurationList = 84CF92CF286A146E00EBD615 /* Build configuration list for PBXProject "Chatty" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84CF92CB286A146E00EBD615;
+			productRefGroup = 84CF92D5286A146E00EBD615 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84CF92D3286A146E00EBD615 /* Chatty */,
+				84CF92EE286A146F00EBD615 /* ChattyTests */,
+				84CF92F8286A146F00EBD615 /* ChattyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84CF92D2286A146E00EBD615 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CF92E7286A146F00EBD615 /* LaunchScreen.storyboard in Resources */,
+				84CF92E4286A146F00EBD615 /* Assets.xcassets in Resources */,
+				84CF92E2286A146E00EBD615 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CF92ED286A146F00EBD615 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CF92F7286A146F00EBD615 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84CF92D0286A146E00EBD615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CF92DF286A146E00EBD615 /* ViewController.m in Sources */,
+				84CF92D9286A146E00EBD615 /* AppDelegate.m in Sources */,
+				84CF92EA286A146F00EBD615 /* main.m in Sources */,
+				84CF92DC286A146E00EBD615 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CF92EB286A146F00EBD615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CF92F4286A146F00EBD615 /* ChattyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84CF92F5286A146F00EBD615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CF92FE286A146F00EBD615 /* ChattyUITests.m in Sources */,
+				84CF9300286A146F00EBD615 /* ChattyUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84CF92F1286A146F00EBD615 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CF92D3286A146E00EBD615 /* Chatty */;
+			targetProxy = 84CF92F0286A146F00EBD615 /* PBXContainerItemProxy */;
+		};
+		84CF92FB286A146F00EBD615 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84CF92D3286A146E00EBD615 /* Chatty */;
+			targetProxy = 84CF92FA286A146F00EBD615 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84CF92E0286A146E00EBD615 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CF92E1286A146E00EBD615 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84CF92E5286A146F00EBD615 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84CF92E6286A146F00EBD615 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84CF9301286A146F00EBD615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84CF9302286A146F00EBD615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84CF9304286A146F00EBD615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N977YX5NDL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chatty/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Chatty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84CF9305286A146F00EBD615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N977YX5NDL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Chatty/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Chatty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84CF9307286A146F00EBD615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N977YX5NDL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.ChattyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatty.app/Chatty";
+			};
+			name = Debug;
+		};
+		84CF9308286A146F00EBD615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N977YX5NDL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.ChattyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatty.app/Chatty";
+			};
+			name = Release;
+		};
+		84CF930A286A146F00EBD615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N977YX5NDL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.ChattyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chatty;
+			};
+			name = Debug;
+		};
+		84CF930B286A146F00EBD615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N977YX5NDL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.ChattyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chatty;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84CF92CF286A146E00EBD615 /* Build configuration list for PBXProject "Chatty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CF9301286A146F00EBD615 /* Debug */,
+				84CF9302286A146F00EBD615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CF9303286A146F00EBD615 /* Build configuration list for PBXNativeTarget "Chatty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CF9304286A146F00EBD615 /* Debug */,
+				84CF9305286A146F00EBD615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CF9306286A146F00EBD615 /* Build configuration list for PBXNativeTarget "ChattyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CF9307286A146F00EBD615 /* Debug */,
+				84CF9308286A146F00EBD615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84CF9309286A146F00EBD615 /* Build configuration list for PBXNativeTarget "ChattyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84CF930A286A146F00EBD615 /* Debug */,
+				84CF930B286A146F00EBD615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84CF92CC286A146E00EBD615 /* Project object */;
+}
