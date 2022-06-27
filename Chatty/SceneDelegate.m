@@ -6,12 +6,14 @@
 //
 
 #import "SceneDelegate.h"
+#import <Parse/Parse.h>
 
 @interface SceneDelegate ()
 
 @end
 
 @implementation SceneDelegate
+
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
@@ -32,6 +34,16 @@
 - (void)sceneDidBecomeActive:(UIScene *)scene {
     // Called when the scene has moved from an inactive state to an active state.
     // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+    PFUser *user = [PFUser currentUser];
+       if (user != nil) {
+           NSLog(@"Welcome back %@ 😀", user.username);
+
+           // TODO: Load Chat view controller and set as root view controller
+           UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+           UIViewController *chatNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"ChatNavigationController"];
+           self.window.rootViewController = chatNavigationController;
+
+       }
 }
 
 
